@@ -30,6 +30,7 @@
   font-weight: 700;
   position: relative;
 }
+
 .nav-link::after {
   content: "";
   position: absolute;
@@ -46,7 +47,7 @@
 .nav-link:hover::after {
   right: 0;
 }
-@media (max-width: 400px) {
+@media (max-width: 480px) {
   .header {
     display: none;
   }

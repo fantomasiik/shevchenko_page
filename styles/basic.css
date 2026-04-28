@@ -20,3 +20,7 @@ ul {
   padding: 0 10px;
   max-width: 970px;
 }
+h1,
+p {
+  margin: 0;
+}
