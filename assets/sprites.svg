@@ -43,6 +43,24 @@
 
 
 </symbol>
+
+
+
+<symbol id="burger-icon" viewBox="0 0 33 20">
+  <rect width="33" height="3.83721" />
+  <rect y="7.67383" width="33" height="3.83721" />
+  <rect y="15.3496" width="33" height="3.83721" />
+</symbol>
+
+
+<symbol id="cross-icon" viewBox="0 0 23 23">
+  <rect x="2.68701" width="27.3715" height="3.8" transform="rotate(45 2.68701 0)" />
+  <rect x="0.831055" y="19.5566" width="27.3715" height="3.8" transform="rotate(-45 0.831055 19.5566)" />
+</symbol>
+
+
 </svg>
+
+
 
 

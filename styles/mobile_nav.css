@@ -1,0 +1,77 @@
+.mobile-navigation {
+  display: none;
+}
+
+.mobile-navigation-toggler {
+  display: none;
+}
+
+.mobile-navigation > label {
+  position: absolute;
+  top: 55px;
+  right: 30px;
+  z-index: 1001;
+}
+
+.mobile-navigation-burger,
+.mobile-navigation-cross {
+  width: 30px;
+  height: 30px;
+  fill: black;
+  cursor: pointer;
+}
+
+.mobile-navigation-cross {
+  display: none;
+}
+
+.mobile-navigation-close {
+  position: absolute;
+  top: 55px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.mobile-navigation-menu {
+  padding: 55px 20px 0;
+  position: fixed;
+  inset: 0;
+  background: #fff;
+
+  transform: translateX(100%);
+  transition: 0.3s ease;
+  z-index: 1000;
+}
+
+.mobile-navigation-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.mobile-navigation-link {
+  font-size: 34px;
+  font-weight: 700;
+  color: var(--font-color-grey);
+  text-decoration: none;
+}
+
+.mobile-navigation-toggler:checked ~ .mobile-navigation-menu {
+  transform: translateX(0);
+}
+
+.mobile-navigation-toggler:checked ~ label .mobile-navigation-burger {
+  display: none;
+}
+
+.mobile-navigation-toggler:checked
+  ~ label:last-of-type
+  .mobile-navigation-cross {
+  display: block;
+}
+
+@media (max-width: 480px) {
+  .mobile-navigation {
+    display: block;
+  }
+}

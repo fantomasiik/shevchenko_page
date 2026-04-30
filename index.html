@@ -7,6 +7,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="index.css">
+<script src="main.js" defer ></script>
 <link rel="icon" href="./assets/favicon.png" type="image/png">
 	<title>Shevchenko</title>
 </head>
@@ -24,6 +25,47 @@
 			</nav>
 		</div>
 	</header>
+
+
+
+
+	<div class="mobile-navigation" aria-label="mobile navigation">
+
+  <input type="checkbox" id="toggler-id" class="mobile-navigation-toggler">
+
+  <label for="toggler-id" aria-label="open-close mobile_navigation menu">
+    <svg class="mobile-navigation-burger" aria-label="mobile navigation burger icon">
+      <use href="assets/sprites.svg#burger-icon"></use>
+    </svg>
+  </label>
+
+  <nav class="mobile-navigation-menu" aria-label="mobile navigation menu">
+    <ul class="mobile-navigation-list">
+      <li><a class="mobile-navigation-link" href="#home-id" aria-label="link to home">Home</a></li>
+      <li><a class="mobile-navigation-link" href="#about-id" aria-label="link to about">About</a></li>
+      <li><a class="mobile-navigation-link" href="#history-id" aria-label="link to history">History</a></li>
+      <li><a class="mobile-navigation-link" href="#portfolio-id" aria-label="link to portfolio">Portfolio</a></li>
+      <li><a class="mobile-navigation-link" href="#contacts-id" aria-label="link to contacts">Contacts</a></li>
+    </ul>
+  </nav>
+
+  <label for="toggler-id" class="mobile-navigation-close" aria-label="open-close mobile_navigation menu">
+    <svg class="mobile-navigation-cross" aria-label="mobile navigation cross icon">
+      <use href="assets/sprites.svg#cross-icon"></use>
+    </svg>
+  </label>
+
+</div>
+
+
+
+
+
+
+
+
+
+
 	<main aria-label="main">
 <section class="home" aria-label="home section" id="home-id">
 	<div class="container">
@@ -106,4 +148,6 @@
 	</footer>
 
 </body>
+
+
 </html>
